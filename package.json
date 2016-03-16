@@ -1,0 +1,22 @@
+{
+  "name": "vulpes-final-exam",
+  "version": "1.0.0",
+  "description": "exam",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/molakos/vulpes-final-exam.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/molakos/vulpes-final-exam/issues"
+  },
+  "homepage": "https://github.com/molakos/vulpes-final-exam#readme",
+  "dependencies": {
+    "tape": "^4.5.1"
+  }
+}
