@@ -4,13 +4,13 @@ var fs = require('fs');
 
 function FileWriter (filename, object, newFs) {
   this.filename = filename;
-  this.object = object;
-  this.fs = newFs || fs;
+  this.object = JSON.stringify(object);
 }
 
 FileWriter.prototype.jsonToFileWriter = function (cb) {
+  var _this = this;
   setTimeout(function () {
-    this.fs.writeFile(this.filename, this.object, function (err) {
+    fs.writeFile('uborka.json', _this.object, function (err) {
       if (err) {
         return cb(err);
       }
